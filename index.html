@@ -22,14 +22,10 @@
 html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Times New Roman',Times,serif;}
 .screen{display:none;min-height:100vh;flex-direction:column;}
 .screen.active{display:flex;}
-
-/* TOPBAR */
 .topbar{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--card);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50;}
 .back-btn{width:34px;height:34px;border-radius:50%;background:var(--surface);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;color:var(--muted);flex-shrink:0;}
 .back-btn:hover{background:var(--purple-light);color:var(--purple);}
 .topbar-title{font-size:15px;font-weight:500;color:var(--text);flex:1;}
-
-/* HERO */
 .cat-hero{position:relative;width:100%;height:56vw;max-height:380px;min-height:220px;overflow:hidden;background:var(--card);}
 .cat-hero-img{width:100%;height:100%;object-fit:cover;display:block;opacity:.85;}
 .cat-hero-ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#1a1228,#0d1a2a);font-size:60px;opacity:.5;}
@@ -37,19 +33,13 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Times 
 .cat-hero-text{position:absolute;bottom:0;left:0;right:0;padding:20px 18px 18px;}
 .cat-hero-title{font-family:'Times New Roman',Times,serif;font-size:clamp(52px,13vw,96px);font-weight:900;color:#fff;line-height:1.05;margin-bottom:6px;text-shadow:0 2px 12px rgba(0,0,0,.5);}
 .cat-hero-sub{font-size:13px;color:rgba(255,255,255,.65);}
-
-/* VIP PROMO */
 .vip-promo-wrap{padding:14px 16px 0;}
 .vip-promo-card{background:var(--purple);border:2px solid var(--purple-mid);border-radius:16px;padding:28px 20px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:box-shadow .2s,transform .15s;min-height:130px;}
 .vip-promo-card:hover{box-shadow:0 8px 28px rgba(139,92,246,.35);transform:translateY(-2px);}
-
-/* GRID */
 .cat-grid-wrap{padding:16px;flex:1;}
 .sec-title{font-family:'Times New Roman',Times,serif;font-size:17px;color:var(--text);margin-bottom:14px;display:flex;align-items:center;gap:10px;}
 .sec-title::after{content:'';flex:1;height:1px;background:var(--border);}
 .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:14px;}
-
-/* MOVIE CARD */
 .movie-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s;}
 .movie-card:hover{transform:translateY(-4px);box-shadow:0 8px 28px rgba(139,92,246,.25);border-color:var(--purple-mid);}
 .poster-wrap{width:100%;aspect-ratio:2/3;position:relative;overflow:hidden;background:var(--purple-light);pointer-events:none;}
@@ -61,19 +51,12 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Times 
 .card-info{padding:10px 12px;pointer-events:none;}
 .card-name{font-size:12px;font-weight:500;color:var(--text);margin-bottom:8px;line-height:1.3;}
 .card-btn{width:100%;padding:12px;background:var(--purple);border:none;border-radius:8px;color:#fff;font-size:15px;font-weight:700;font-family:'Times New Roman',Times,serif;cursor:pointer;}
-
-/* BUY */
 .buy-scroll{flex:1;overflow-y:auto;}
 .buy-poster{width:100%;overflow:hidden;background:var(--card);}
-.buy-ph{width:100%;height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:linear-gradient(160deg,#1a1228,#0d1a2a);}
-.buy-ph-icon{font-size:48px;opacity:.4;}
-.buy-ph-name{font-size:16px;color:var(--purple);text-align:center;padding:0 20px;}
 .buy-body{padding:20px 16px;}
 .buy-title{font-size:22px;color:#fff;margin-bottom:8px;}
 .buy-desc{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid var(--border);}
 .price-tag{display:inline-block;background:var(--purple);color:#fff;font-size:22px;font-weight:500;padding:8px 18px;border-radius:10px;margin-bottom:20px;}
-
-/* INPUT */
 .inp-label-big{font-size:18px;font-weight:700;color:#fff;margin-bottom:10px;display:block;}
 .inp-wrap{position:relative;margin-bottom:14px;}
 .inp-field{width:100%;padding:13px 130px 13px 15px;background:var(--surface);border:2px solid #ef4444;border-radius:10px;color:var(--text);font-size:15px;font-family:'Times New Roman',Times,serif;outline:none;transition:border-color .3s;}
@@ -81,8 +64,6 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Times 
 .inp-field::placeholder{color:var(--hint);}
 .inp-confirm-btn{position:absolute;right:6px;top:50%;transform:translateY(-50%);height:36px;padding:0 10px;min-width:42px;background:transparent;border:none;border-radius:8px;color:rgba(255,255,255,.25);font-size:13px;font-weight:700;font-family:'Times New Roman',Times,serif;cursor:pointer;transition:all .25s;white-space:nowrap;}
 .inp-confirm-active{background:linear-gradient(135deg,var(--purple),var(--pink))!important;color:#fff!important;box-shadow:0 2px 10px rgba(139,92,246,.4);padding:0 14px!important;}
-
-/* UTGA */
 .utga-sec{display:none;margin-top:16px;}
 .utga-sec.on{display:block;}
 .utga-lbl{font-size:11px;font-weight:500;color:var(--green-mid);letter-spacing:.07em;text-transform:uppercase;margin-bottom:6px;display:flex;align-items:center;gap:6px;}
@@ -91,8 +72,6 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Times 
 .utga-inline-val{flex:1;font-size:15px;font-weight:500;color:#fff;word-break:break-all;line-height:1.4;min-width:0;}
 .utga-inline-copy{flex-shrink:0;height:36px;padding:0 14px;background:linear-gradient(135deg,var(--purple),var(--pink));border:none;border-radius:8px;color:#fff;font-size:13px;font-weight:700;font-family:'Times New Roman',Times,serif;cursor:pointer;transition:all .2s;white-space:nowrap;}
 .utga-inline-copy.ok{background:var(--green);}
-
-/* BANK */
 .bank-box{background:var(--card);border:2px solid var(--green-mid);border-radius:14px;overflow:hidden;margin-bottom:14px;}
 .bank-hd-big{background:var(--purple-light);padding:13px 16px;border-bottom:1px solid var(--purple-mid);font-size:15px;font-weight:700;color:#fff;}
 .bank-rows{padding:12px 16px;}
@@ -102,17 +81,12 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Times 
 .bv.pu{color:var(--purple);font-size:16px;font-weight:700;}
 .inline-copy-btn{display:inline-flex;align-items:center;gap:4px;flex-shrink:0;height:36px;padding:0 14px;background:linear-gradient(135deg,var(--purple),var(--pink));border:none;border-radius:8px;color:#fff;font-size:13px;font-weight:700;font-family:'Times New Roman',Times,serif;cursor:pointer;transition:all .2s;white-space:nowrap;}
 .inline-copy-btn.ok{opacity:.85;}
-
 .paid-btn{width:100%;padding:16px;background:linear-gradient(135deg,var(--green),#059669);border:none;border-radius:12px;color:#fff;font-size:16px;font-weight:500;font-family:'Times New Roman',Times,serif;cursor:pointer;margin-bottom:20px;box-shadow:0 6px 20px rgba(16,185,129,.4);display:block;text-align:center;text-decoration:none;}
-
-/* VIP FULL */
 .vip-full-wrap{flex:1;overflow-y:auto;padding:20px 16px;}
 .vip-full-hero{text-align:center;padding-bottom:20px;border-bottom:1px solid var(--border);margin-bottom:20px;}
 .vip-price-box{background:linear-gradient(135deg,var(--purple-light),var(--pink-light));border:1.5px solid var(--purple-mid);border-radius:14px;padding:18px;text-align:center;margin-bottom:16px;}
 .vip-price-big{font-size:36px;color:#fff;margin-bottom:4px;}
 .vip-price-sub{font-size:12px;color:var(--muted);}
-
-/* 18+ BADGE */
 .badge-18{display:inline-flex;align-items:center;justify-content:center;width:74px;height:74px;background:radial-gradient(circle,#ff3b3b,#c0000a);border:3px solid #fff;border-radius:50%;font-size:22px;font-weight:900;color:#fff;font-family:'Times New Roman',Times,serif;letter-spacing:-.5px;box-shadow:0 4px 16px rgba(239,68,68,.7);flex-shrink:0;transform:rotate(-10deg);animation:wobble 2.5s ease-in-out infinite;}
 .badge-18::before{content:'18+';}
 @keyframes wobble{0%,100%{transform:rotate(-10deg) scale(1);}50%{transform:rotate(-10deg) scale(1.1);}}
@@ -120,7 +94,6 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Times 
 </head>
 <body>
 
-<!-- КАТАЛОГ -->
 <div class="screen active" id="s-catalog">
   <div class="cat-hero" id="heroEl">
     <div class="cat-hero-ph">🎬</div>
@@ -133,23 +106,20 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Times 
       <p class="cat-hero-sub">Кино сонгоод шууд авах боломжтой</p>
     </div>
   </div>
-
   <div class="vip-promo-wrap">
     <div class="vip-promo-card" onclick="go('s-vip')">
       <div style="width:100%;text-align:center;">
         <h2 style="font-family:'Times New Roman',Times,serif;font-size:22px;font-weight:900;color:#fff;margin:0 0 6px;">ХААЛТТАЙ ГРУПП ОРОХ</h2>
-        <p style="font-size:20px;font-weight:700;color:#fff;margin:0;">15,000 ₮ / 2 САР</p>
+        <p style="font-size:20px;font-weight:700;color:#fff;margin:0;">15,000 &#8366; / 2 САР</p>
       </div>
     </div>
   </div>
-
   <div class="cat-grid-wrap">
     <p class="sec-title">Кинонууд</p>
     <div class="cat-grid" id="catGrid"></div>
   </div>
 </div>
 
-<!-- ХУДАЛДАН АВАХ -->
 <div class="screen" id="s-buy">
   <div class="topbar">
     <button class="back-btn" onclick="go('s-catalog')">&#8592;</button>
@@ -161,35 +131,30 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Times 
       <h2 class="buy-title" id="buyTitleEl"></h2>
       <p class="buy-desc" id="buyDescEl"></p>
       <div class="price-tag" id="buyPriceTag"></div>
-
       <label class="inp-label-big">ТА ӨӨРИЙН FACEBOOK НЭРЭЭ ОРУУЛНА УУ.</label>
       <div class="inp-wrap">
-        <input class="inp-field" id="buyName" type="text"
-          placeholder="Жишээ: Bataa Boldkhuyag"
+        <input class="inp-field" id="buyName" type="text" placeholder="Жишээ: Bataa Boldkhuyag"
           oninput="onNameType('buyName','buyConfirm')"
           onkeydown="if(event.key==='Enter')doConfirm()">
-        <button class="inp-confirm-btn" id="buyConfirm" onclick="doConfirm()">→</button>
+        <button class="inp-confirm-btn" id="buyConfirm" onclick="doConfirm()">&#8594;</button>
       </div>
-
       <div class="utga-sec" id="buyUtgaSec">
         <p class="utga-lbl">Гүйлгээний утга</p>
         <div class="utga-inline-row">
           <span class="utga-inline-val" id="buyUtgaVal"></span>
-          <button class="utga-inline-copy" id="buyUtgaBtn"
-            onclick="cpTxt(document.getElementById('buyUtgaVal').textContent,'buyUtgaBtn','buyUtgaTxt','buyUtgaIcon')">
-            <span id="buyUtgaIcon">📋</span> <span id="buyUtgaTxt">Хуулах</span>
+          <button class="utga-inline-copy" id="buyUtgaBtn" onclick="cpTxt(document.getElementById('buyUtgaVal').textContent,'buyUtgaBtn','buyUtgaTxt','buyUtgaIcon')">
+            <span id="buyUtgaIcon">&#128203;</span> <span id="buyUtgaTxt">Хуулах</span>
           </button>
         </div>
         <div class="bank-box">
-          <div class="bank-hd-big">💳 Дараах дансанд шилжүүлнэ үү — ХААН БАНК</div>
+          <div class="bank-hd-big">&#128179; Дараах дансанд шилжүүлнэ үү — ХААН БАНК</div>
           <div class="bank-rows">
             <div class="bank-row">
               <span class="bl">Дансны дугаар</span>
               <span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
                 <span class="bv pu">840005005689052277</span>
-                <button class="inline-copy-btn" id="buyBankBtn"
-                  onclick="cpTxt('840005005689052277','buyBankBtn','buyBankTxt','buyBankIcon')">
-                  <span id="buyBankIcon">📋</span><span id="buyBankTxt">Хуулах</span>
+                <button class="inline-copy-btn" id="buyBankBtn" onclick="cpTxt('840005005689052277','buyBankBtn','buyBankTxt','buyBankIcon')">
+                  <span id="buyBankIcon">&#128203;</span><span id="buyBankTxt">Хуулах</span>
                 </button>
               </span>
             </div>
@@ -197,19 +162,17 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Times 
         </div>
         <a class="paid-btn" href="https://m.me/1159258143926994" target="_blank">ТӨЛБӨР ТӨЛСӨН БАРИМТАА ИЛГЭЭНЭ ҮҮ.</a>
       </div>
-
       <div style="height:1px;background:var(--border);margin:0 0 16px"></div>
       <div class="vip-promo-card" onclick="go('s-vip')" style="margin-bottom:20px;">
         <div style="width:100%;text-align:center;">
           <h2 style="font-family:'Times New Roman',Times,serif;font-size:22px;font-weight:900;color:#fff;margin:0 0 6px;">ХААЛТТАЙ ГРУППТ ОРОХ</h2>
-          <p style="font-size:20px;font-weight:700;color:#fff;margin:0;">15,000 ₮ / 2 САР</p>
+          <p style="font-size:20px;font-weight:700;color:#fff;margin:0;">15,000 &#8366; / 2 САР</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- VIP -->
 <div class="screen" id="s-vip">
   <div class="topbar">
     <button class="back-btn" onclick="go('s-catalog')">&#8592;</button>
@@ -220,38 +183,33 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Times 
       <h2 style="font-size:28px;font-weight:900;color:#fff;">ХААЛТТАЙ ГРУППТ ОРОХ</h2>
     </div>
     <div class="vip-price-box">
-      <p class="vip-price-big">15,000 ₮</p>
-      <p class="vip-price-sub">2 сарын эрх · Нэг удаагийн төлбөр</p>
+      <p class="vip-price-big">15,000 &#8366;</p>
+      <p class="vip-price-sub">2 сарын эрх &middot; Нэг удаагийн төлбөр</p>
     </div>
-
     <label class="inp-label-big">ТА ӨӨРИЙН FACEBOOK НЭРЭЭ ОРУУЛНА УУ.</label>
     <div class="inp-wrap">
-      <input class="inp-field" id="vipName" type="text"
-        placeholder="Жишээ: Bataa Boldkhuyag"
+      <input class="inp-field" id="vipName" type="text" placeholder="Жишээ: Bataa Boldkhuyag"
         oninput="onNameType('vipName','vipConfirm')"
         onkeydown="if(event.key==='Enter')doVipConfirm()">
-      <button class="inp-confirm-btn" id="vipConfirm" onclick="doVipConfirm()">→</button>
+      <button class="inp-confirm-btn" id="vipConfirm" onclick="doVipConfirm()">&#8594;</button>
     </div>
-
     <div class="utga-sec" id="vipUtgaSec">
       <p class="utga-lbl">Гүйлгээний утга</p>
       <div class="utga-inline-row">
         <span class="utga-inline-val" id="vipUtgaVal"></span>
-        <button class="utga-inline-copy" id="vipUtgaBtn"
-          onclick="cpTxt(document.getElementById('vipUtgaVal').textContent,'vipUtgaBtn','vipUtgaTxt','vipUtgaIcon')">
-          <span id="vipUtgaIcon">📋</span> <span id="vipUtgaTxt">Хуулах</span>
+        <button class="utga-inline-copy" id="vipUtgaBtn" onclick="cpTxt(document.getElementById('vipUtgaVal').textContent,'vipUtgaBtn','vipUtgaTxt','vipUtgaIcon')">
+          <span id="vipUtgaIcon">&#128203;</span> <span id="vipUtgaTxt">Хуулах</span>
         </button>
       </div>
       <div class="bank-box">
-        <div class="bank-hd-big">💳 Дараах дансанд шилжүүлнэ үү — ХААН БАНК</div>
+        <div class="bank-hd-big">&#128179; Дараах дансанд шилжүүлнэ үү — ХААН БАНК</div>
         <div class="bank-rows">
           <div class="bank-row">
             <span class="bl">Дансны дугаар</span>
             <span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
               <span class="bv pu">840005005689052277</span>
-              <button class="inline-copy-btn" id="vipBankBtn"
-                onclick="cpTxt('840005005689052277','vipBankBtn','vipBankTxt','vipBankIcon')">
-                <span id="vipBankIcon">📋</span><span id="vipBankTxt">Хуулах</span>
+              <button class="inline-copy-btn" id="vipBankBtn" onclick="cpTxt('840005005689052277','vipBankBtn','vipBankTxt','vipBankIcon')">
+                <span id="vipBankIcon">&#128203;</span><span id="vipBankTxt">Хуулах</span>
               </button>
             </span>
           </div>
@@ -263,149 +221,159 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Times 
 </div>
 
 <script>
-const IMAGES={
-  1:"чөлөөт ярилцлага.jpg",
-  2:"номын санч.jpg",
-  3:"movie3.jpg",
-  4:"тосгоны охинтой учирсан нь.jpg",
-  5:"хойд ээж.jpg",
-  6:"movie6.jpg",
-  7:"гудамжинд таарсан эмэтэй.jpg",
-  8:"эхнэрийн эмч найз.jpg",
-  9:"гадуурхагдсан эмэгтэй.jpg",
-  10:"босс эмэгтэй.jpg"
+var IMAGES = {
+  1: "чөлөөт ярилцлага.jpg",
+  2: "номын санч.jpg",
+  3: "movie3.jpg",
+  4: "тосгоны охинтой учирсан нь.jpg",
+  5: "хойд ээж.jpg",
+  6: "movie6.jpg",
+  7: "гудамжинд таарсан эмэтэй.jpg",
+  8: "эхнэрийн эмч найз.jpg",
+  9: "гадуурхагдсан эмэгтэй.jpg",
+  10: "босс эмэгтэй.jpg"
 };
 
-const VIDEOS={
-  1:"https://archive.org/details/video7_202605",
-  2:"https://archive.org/details/video2_202605",
-  3:"https://archive.org/details/video3_202605",
-  4:"https://archive.org/details/video4_202605",
-  5:"https://archive.org/details/video5_202605",
-  6:"https://archive.org/details/video6_202605",
-  7:"https://archive.org/details/video7_20260520",
-  8:"https://archive.org/details/video8_20260520",
-  9:"https://archive.org/details/video9_202605",
-  10:"https://archive.org/details/video10_202605"
+var VIDEOS = {
+  1: "https://archive.org/embed/video7_202605",
+  2: "https://archive.org/embed/video2_202605",
+  3: "https://archive.org/embed/video3_202605",
+  4: "https://archive.org/embed/video4_202605",
+  5: "https://archive.org/embed/video5_202605",
+  6: "https://archive.org/embed/video6_202605",
+  7: "https://archive.org/embed/video7_20260520",
+  8: "https://archive.org/embed/video8_20260520",
+  9: "https://archive.org/embed/video9_202605",
+  10: "https://archive.org/embed/video10_202605"
 };
 
-const MOVIES=[
-  {id:1,name:"Чөлөөт Ярилцлага",price:"5,000 ₮",desc:"Чөлөөт ярилцлагын аянд хайр, хувь тавилан хоёрлоно."},
-  {id:2,name:"Номын Санч",price:"5,000 ₮",desc:"Номын дунд ургасан хайрын үлгэр."},
-  {id:3,name:"Өндөр Эмэгтэй",price:"5,000 ₮",desc:"Өндөр зорилготой эмэгтэйн амьдрал, хайр дурлалын тухай."},
-  {id:4,name:"Тосгоны Охинтой Учирсан Нь",price:"5,000 ₮",desc:"Тосгонд болсон гэнэтийн уулзалт хувь тавиланг өөрчилнө."},
-  {id:5,name:"Хойд Ээж",price:"5,000 ₮",desc:"Хойд ээжийн хайр, гэр бүлийн утга учрын тухай гүн гүнзгий кино."},
-  {id:6,name:"Эмч Бүсгүй",price:"5,000 ₮",desc:"Эмч бүсгүй ба өвчтөний хоорондох гэнэтийн хайрын тухай."},
-  {id:7,name:"Гудамжинд Таарсан Эмэгтэй",price:"5,000 ₮",desc:"Гудамжинд болсон нэг уулзалт хоёр хүний амьдралыг өөрчилнө."},
-  {id:8,name:"Эхнэрийн Эмч Найз",price:"5,000 ₮",desc:"Найрамдал, итгэл, хайр гурвын хооронд зурагдах нарийн шугам."},
-  {id:9,name:"Гадуурхагдсан Эмэгтэй",price:"5,000 ₮",desc:"Нийгмийн гадуурхалтыг даван туулсан эмэгтэйн хайрын тухай."},
-  {id:10,name:"Босс Эмэгтэй",price:"5,000 ₮",desc:"Хүчирхэг, шийдэмгий эмэгтэй удирдагчийн аялал."},
+var MOVIES = [
+  {id:1, name:"Чөлөөт Ярилцлага", price:"5,000 ₮", desc:"Чөлөөт ярилцлагын аянд хайр, хувь тавилан хоёрлоно."},
+  {id:2, name:"Номын Санч", price:"5,000 ₮", desc:"Номын дунд ургасан хайрын үлгэр."},
+  {id:3, name:"Өндөр Эмэгтэй", price:"5,000 ₮", desc:"Өндөр зорилготой эмэгтэйн амьдрал, хайр дурлалын тухай."},
+  {id:4, name:"Тосгоны Охинтой Учирсан Нь", price:"5,000 ₮", desc:"Тосгонд болсон гэнэтийн уулзалт хувь тавиланг өөрчилнө."},
+  {id:5, name:"Хойд Ээж", price:"5,000 ₮", desc:"Хойд ээжийн хайр, гэр бүлийн утга учрын тухай гүн гүнзгий кино."},
+  {id:6, name:"Эмч Бүсгүй", price:"5,000 ₮", desc:"Эмч бүсгүй ба өвчтөний хоорондох гэнэтийн хайрын тухай."},
+  {id:7, name:"Гудамжинд Таарсан Эмэгтэй", price:"5,000 ₮", desc:"Гудамжинд болсон нэг уулзалт хоёр хүний амьдралыг өөрчилнө."},
+  {id:8, name:"Эхнэрийн Эмч Найз", price:"5,000 ₮", desc:"Найрамдал, итгэл, хайр гурвын хооронд зурагдах нарийн шугам."},
+  {id:9, name:"Гадуурхагдсан Эмэгтэй", price:"5,000 ₮", desc:"Нийгмийн гадуурхалтыг даван туулсан эмэгтэйн хайрын тухай."},
+  {id:10, name:"Босс Эмэгтэй", price:"5,000 ₮", desc:"Хүчирхэг, шийдэмгий эмэгтэй удирдагчийн аялал."}
 ];
 
-let movie=null;
+var movie = null;
 
-function go(id){
-  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+function go(id) {
+  document.querySelectorAll('.screen').forEach(function(s){ s.classList.remove('active'); });
   document.getElementById(id).classList.add('active');
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 }
 
-function renderCat(){
-  document.getElementById('catGrid').innerHTML=MOVIES.map(m=>`
-    <div class="movie-card" onclick="openBuy(${m.id})">
-      <div class="poster-wrap">
-        <img src="${IMAGES[m.id]}" alt="${m.name}"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="poster-ph" style="display:none">
-          <span class="poster-ph-icon">🎬</span>
-          <span class="poster-ph-name">${m.name}</span>
-        </div>
-        <span class="b-price">${m.price}</span>
-      </div>
-      <div class="card-info">
-        <p class="card-name">${m.name}</p>
-        <button class="card-btn">Авах</button>
-      </div>
-    </div>`).join('');
+function renderCat() {
+  var html = '';
+  MOVIES.forEach(function(m) {
+    html += '<div class="movie-card" onclick="openBuy(' + m.id + ')">' +
+      '<div class="poster-wrap">' +
+        '<img src="' + IMAGES[m.id] + '" alt="' + m.name + '" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
+        '<div class="poster-ph" style="display:none"><span class="poster-ph-icon">🎬</span><span class="poster-ph-name">' + m.name + '</span></div>' +
+        '<span class="b-price">' + m.price + '</span>' +
+      '</div>' +
+      '<div class="card-info">' +
+        '<p class="card-name">' + m.name + '</p>' +
+        '<button class="card-btn">Авах</button>' +
+      '</div>' +
+    '</div>';
+  });
+  document.getElementById('catGrid').innerHTML = html;
 }
 
-function loadHero(){
-  const pick=MOVIES[Math.floor(Math.random()*MOVIES.length)];
-  document.getElementById('heroEl').innerHTML=
-    `<img class="cat-hero-img" src="${IMAGES[pick.id]}" alt="${pick.name}"
-       onerror="this.style.display='none'">
-     <div class="cat-hero-overlay"></div>
-     <div class="cat-hero-text">
-       <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:6px;">
-         <h1 class="cat-hero-title" style="margin-bottom:0;">АЛИМХАН ПЭЙЖ</h1>
-         <span class="badge-18"></span>
-       </div>
-       <p class="cat-hero-sub">Кино сонгоод шууд авах боломжтой</p>
-     </div>`;
+function loadHero() {
+  var pick = MOVIES[Math.floor(Math.random() * MOVIES.length)];
+  document.getElementById('heroEl').innerHTML =
+    '<img class="cat-hero-img" src="' + IMAGES[pick.id] + '" alt="' + pick.name + '" onerror="this.style.display=\'none\'">' +
+    '<div class="cat-hero-overlay"></div>' +
+    '<div class="cat-hero-text">' +
+      '<div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:6px;">' +
+        '<h1 class="cat-hero-title" style="margin-bottom:0;">АЛИМХАН ПЭЙЖ</h1>' +
+        '<span class="badge-18"></span>' +
+      '</div>' +
+      '<p class="cat-hero-sub">Кино сонгоод шууд авах боломжтой</p>' +
+    '</div>';
 }
 
-function openBuy(id){
-  movie=MOVIES.find(m=>m.id===id);
-  document.getElementById('buyTopTitle').textContent=movie.name;
-  document.getElementById('buyTitleEl').textContent=movie.name;
-  document.getElementById('buyDescEl').textContent=movie.desc;
-  document.getElementById('buyPriceTag').textContent=movie.price;
-  document.getElementById('buyPosterEl').innerHTML=
-    `<iframe src="${VIDEOS[id].replace('archive.org/details/', 'archive.org/embed/')}"
-       style="width:100%;height:300px;border:none;display:block;"
-       allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"
-       allowfullscreen></iframe>`;
-  document.getElementById('buyName').value='';
+function openBuy(id) {
+  movie = MOVIES.find(function(m){ return m.id === id; });
+  document.getElementById('buyTopTitle').textContent = movie.name;
+  document.getElementById('buyTitleEl').textContent = movie.name;
+  document.getElementById('buyDescEl').textContent = movie.desc;
+  document.getElementById('buyPriceTag').textContent = movie.price;
+  var iframe = document.createElement('iframe');
+  iframe.src = VIDEOS[id];
+  iframe.style.width = '100%';
+  iframe.style.height = '300px';
+  iframe.style.border = 'none';
+  iframe.style.display = 'block';
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('allow', 'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture');
+  var posterEl = document.getElementById('buyPosterEl');
+  posterEl.innerHTML = '';
+  posterEl.appendChild(iframe);
+  document.getElementById('buyName').value = '';
   document.getElementById('buyUtgaSec').classList.remove('on');
-  const btn=document.getElementById('buyConfirm');
-  if(btn){btn.classList.remove('inp-confirm-active');btn.textContent='→';}
-  const inp=document.getElementById('buyName');
-  if(inp)inp.classList.remove('valid');
+  var btn = document.getElementById('buyConfirm');
+  if (btn) { btn.classList.remove('inp-confirm-active'); btn.textContent = '→'; }
+  var inp = document.getElementById('buyName');
+  if (inp) inp.classList.remove('valid');
   go('s-buy');
 }
 
-function onNameType(inputId,btnId){
-  const v=document.getElementById(inputId).value.trim();
-  const btn=document.getElementById(btnId);
-  const inp=document.getElementById(inputId);
-  const active=v.length>=2;
-  if(btn){btn.classList.toggle('inp-confirm-active',active);btn.textContent=active?'БАТАЛГААЖУУЛАХ':'→';}
-  if(inp)inp.classList.toggle('valid',active);
+function onNameType(inputId, btnId) {
+  var v = document.getElementById(inputId).value.trim();
+  var btn = document.getElementById(btnId);
+  var inp = document.getElementById(inputId);
+  var active = v.length >= 2;
+  if (btn) { btn.classList.toggle('inp-confirm-active', active); btn.textContent = active ? 'БАТАЛГААЖУУЛАХ' : '→'; }
+  if (inp) inp.classList.toggle('valid', active);
 }
 
-function doConfirm(){
-  const n=document.getElementById('buyName').value.trim();
-  if(n.length<2)return;
-  document.getElementById('buyUtgaVal').textContent=n+' — '+movie.name;
+function doConfirm() {
+  var n = document.getElementById('buyName').value.trim();
+  if (n.length < 2) return;
+  document.getElementById('buyUtgaVal').textContent = n + ' — ' + movie.name;
   document.getElementById('buyUtgaSec').classList.add('on');
-  document.getElementById('buyUtgaSec').scrollIntoView({behavior:'smooth',block:'start'});
+  document.getElementById('buyUtgaSec').scrollIntoView({behavior:'smooth', block:'start'});
 }
 
-function doVipConfirm(){
-  const n=document.getElementById('vipName').value.trim();
-  if(n.length<2)return;
-  document.getElementById('vipUtgaVal').textContent=n+' — alimkhan';
+function doVipConfirm() {
+  var n = document.getElementById('vipName').value.trim();
+  if (n.length < 2) return;
+  document.getElementById('vipUtgaVal').textContent = n + ' — alimkhan';
   document.getElementById('vipUtgaSec').classList.add('on');
-  document.getElementById('vipUtgaSec').scrollIntoView({behavior:'smooth',block:'start'});
+  document.getElementById('vipUtgaSec').scrollIntoView({behavior:'smooth', block:'start'});
 }
 
-function cpTxt(text,btnId,txtId,iconId){
-  const label=document.getElementById(txtId)?document.getElementById(txtId).textContent:'Хуулах';
-  const done=()=>{
-    const b=document.getElementById(btnId);if(b)b.classList.add('ok');
-    const t=document.getElementById(txtId);if(t)t.textContent='Хуулагдлаа!';
-    const i=document.getElementById(iconId);if(i)i.textContent='✓';
-    setTimeout(()=>{
-      if(b)b.classList.remove('ok');
-      if(t)t.textContent=label;
-      if(i)i.textContent='📋';
-    },2500);
-  };
-  navigator.clipboard.writeText(text).then(done).catch(()=>{
-    const el=document.createElement('textarea');
-    el.value=text;document.body.appendChild(el);el.select();
-    document.execCommand('copy');document.body.removeChild(el);done();
-  });
+function cpTxt(text, btnId, txtId, iconId) {
+  var origLabel = document.getElementById(txtId) ? document.getElementById(txtId).textContent : 'Хуулах';
+  function done() {
+    var b = document.getElementById(btnId); if (b) b.classList.add('ok');
+    var t = document.getElementById(txtId); if (t) t.textContent = 'Хуулагдлаа!';
+    var i = document.getElementById(iconId); if (i) i.textContent = '✓';
+    setTimeout(function(){
+      var b2 = document.getElementById(btnId); if (b2) b2.classList.remove('ok');
+      var t2 = document.getElementById(txtId); if (t2) t2.textContent = origLabel;
+      var i2 = document.getElementById(iconId); if (i2) i2.textContent = '📋';
+    }, 2500);
+  }
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).then(done).catch(function(){
+      var el = document.createElement('textarea');
+      el.value = text; document.body.appendChild(el); el.select();
+      document.execCommand('copy'); document.body.removeChild(el); done();
+    });
+  } else {
+    var el = document.createElement('textarea');
+    el.value = text; document.body.appendChild(el); el.select();
+    document.execCommand('copy'); document.body.removeChild(el); done();
+  }
 }
 
 renderCat();
